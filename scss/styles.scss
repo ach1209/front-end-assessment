@@ -1,1 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
+@import './base/colors';
+@import './base/mixins';
+@import './components/hero';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: $black;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $white;
+}
+
+#page {
+  min-height: 100vh;
+}

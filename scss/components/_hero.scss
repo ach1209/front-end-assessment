@@ -1,0 +1,19 @@
+.hero-section {
+  position: relative;
+  top: 4.6rem;
+}
+
+.hero-title {
+  @include setText(2rem, 700, center, uppercase);
+  letter-spacing: 1rem;
+}
+
+.hero-subtitle {
+  @include setText(4.6rem, 700, center, uppercase);
+  letter-spacing: 1rem;
+}
+
+.hero-description {
+  @include setText(1.7rem, 700, center);
+  padding: 2rem;
+}

@@ -1,0 +1,6 @@
+@mixin setText($size, $weight, $align: left, $transform: none) {
+  font-size: $size;
+  font-weight: $weight;
+  text-align: $align;
+  text-transform: $transform;
+}
