@@ -1,0 +1,19 @@
+{
+  "name": "ep-co_assessment",
+  "version": "1.0.0",
+  "description": "Front-end assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o dist/css --output-style compressed",
+    "serve": "lite-server"
+  },
+  "author": "Anthony",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
