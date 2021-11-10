@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  top: 4.6rem;
+  top: 8rem;
 }
 
 .hero-title {
@@ -16,4 +16,18 @@
 .hero-description {
   @include setText(1.7rem, 700, center);
   padding: 2rem;
+
+  &--compact {
+    max-width: 539px;
+    margin: 0 auto;
+  }
+}
+
+.hero-image-container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 80%)
+}
+
+.hero-arrow-container {
+  position: absolute;
+  left: 50%;
 }
