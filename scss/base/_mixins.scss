@@ -4,3 +4,15 @@
   text-align: $align;
   text-transform: $transform;
 }
+
+@mixin device-desktop {
+  @media screen and (min-width: 829px) {
+    @content;
+  }
+}
+
+@mixin device-medium {
+  @media screen and (min-width: 720px) and (max-width: 828px) {
+    @content;
+  }
+}

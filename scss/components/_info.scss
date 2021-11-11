@@ -1,0 +1,58 @@
+.info-section {
+  position: relative;
+  top: 8rem;
+  display: grid;
+
+  @include device-medium {
+    
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;    
+  }
+}
+
+.info-column {
+  padding: 0 2rem;
+
+  &--left {
+    @include device-medium {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &--right {
+    display: grid;
+
+    @include device-desktop {
+      grid-template-columns: repeat(5, 1fr);
+      grid-column: 2 / 3;
+    }
+
+    @include device-medium {
+      grid-column: 4 / -1;      
+    }
+
+  }
+}
+
+.info-title {
+  @include setText(2rem, 700, $transform: uppercase);
+  letter-spacing: 0.6rem;
+  max-width: 30rem;
+  grid-column: 1 / 5;
+  grid-row: 2;
+  align-self: center;
+
+  &--black {
+    color: $black;
+  }
+}
+
+.text-large {
+  font-size: 4.6rem;
+}
+
+.info-description {
+  @include setText(1.7rem, 700);
+  grid-column: 1 / 5;
+  grid-row: 3;
+}
