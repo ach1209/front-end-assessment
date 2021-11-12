@@ -1,0 +1,30 @@
+.full-text {
+  position: relative;
+  top: 16rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+
+  &-wrapper {
+    max-width: 45rem;
+    margin: 0 auto;
+    grid-row: 2;
+  }
+
+  &-content {
+    @include setText(2rem, 700, center, uppercase);
+    letter-spacing: 1rem;
+  }
+
+  &-body {
+    @include setText(4.4rem, 700, center, uppercase);
+
+    @include device-large {
+      font-size: 6rem;
+    }
+
+    @include device-medium-large {
+      font-size: 6rem;
+    }
+  }
+}
