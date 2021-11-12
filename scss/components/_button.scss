@@ -1,8 +1,10 @@
 .btn {
   @include setText(1.6rem, 700, center);
+  font-family: 'Open Sans', sans-serif;
   max-width: 20rem;
   padding: 1.5rem 3rem;
   background-color: $white;
+  cursor: pointer;
 
   &--green {
     color: $darkGreen;
