@@ -1,0 +1,111 @@
+.secondary-info {
+  position: relative;
+  top: 16rem;
+
+  @include device-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  @include device-medium-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  @include device-medium {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  &__background {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  &__image-container {
+    position: absolute;
+    top: -8rem;
+    z-index: 1;
+
+    @include device-large {
+      grid-column: 5 / -1;
+    }
+
+    @include device-medium-large {
+      grid-column: 4 / -1;
+    }
+
+    @include device-medium {
+      grid-column: 3 / -1;
+    }
+
+    @include device-small-medium {
+      grid-column: 3 / -1;
+    }
+  }
+
+  &__content-body {
+    padding-left: 2rem;
+    position: absolute;
+
+    @include device-large {
+      grid-column: 1 / 4;
+      grid-row: 1;
+      align-self: center;      
+    }
+
+    @include device-medium-large {
+      grid-column: 1 / 4;
+      grid-row: 1;
+      align-self: center;      
+    }
+
+    @include device-medium {
+      grid-column: 1 / 3;
+      grid-row: 1;
+      align-self: center;      
+    }
+
+    @include device-small {
+      top: 50%;
+    }
+  }
+
+  &__title,
+  &__subtitle,
+  &__description {
+    color: $black;
+  }
+
+  &__title,
+  &__subtitle {
+    @include setText(2rem, 700, $transform: uppercase);
+    letter-spacing: 1rem;
+  }
+
+  &__description {
+    @include setText(1.7rem, 700);
+  }
+
+  &__title-wrapper {
+    max-width: 25rem;
+  }
+}
+
+.background-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right, rgba($whiteAlt, 0.9), rgba($whiteAlt, 0.6));
+
+  @include device-medium-large {
+    background: linear-gradient(to right, rgba($whiteAlt, 0.9), rgba($white, 0.4));
+  }
+}
+
+
+

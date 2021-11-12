@@ -7,7 +7,7 @@
   @include setText(2rem, 700, center, uppercase);
   letter-spacing: 1rem;
 
-  @include device-desktop {
+  @include device-medium-large {
     font-size: 4rem;
   }
 }
@@ -16,7 +16,7 @@
   @include setText(4.6rem, 700, center, uppercase);
   letter-spacing: 1rem;
 
-  @include device-desktop {
+  @include device-medium-large {
     font-size: 8.5rem;
   }
 }
