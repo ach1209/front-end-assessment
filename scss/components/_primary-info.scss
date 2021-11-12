@@ -21,12 +21,7 @@
   &--right {
     display: grid;
 
-    @include device-large {
-      grid-template-columns: repeat(5, 1fr);
-      grid-column: 2 / 3;
-    }
-
-    @include device-medium-large {
+    @include device-medium-large-no-max {
       grid-template-columns: repeat(5, 1fr);
       grid-column: 2 / 3;
     }

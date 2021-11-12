@@ -2,19 +2,7 @@
   position: relative;
   top: 16rem;
 
-  @include device-large {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  @include device-medium-large {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  @include device-medium {
+  @include device-medium-no-max {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
@@ -51,13 +39,7 @@
     padding-left: 2rem;
     position: absolute;
 
-    @include device-large {
-      grid-column: 1 / 4;
-      grid-row: 1;
-      align-self: center;      
-    }
-
-    @include device-medium-large {
+    @include device-medium-large-no-max {
       grid-column: 1 / 4;
       grid-row: 1;
       align-self: center;      

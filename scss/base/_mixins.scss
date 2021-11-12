@@ -11,8 +11,20 @@
   }
 }
 
+@mixin device-medium-large-no-max {
+  @media screen and (min-width: 829px) {
+    @content;
+  }
+}
+
 @mixin device-medium-large {
   @media screen and (min-width: 829px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin device-medium-no-max {
+  @media screen and (min-width: 720px) {
     @content;
   }
 }
