@@ -47,10 +47,6 @@
   align-self: center;
 }
 
-.text-large {
-  font-size: 4.6rem;
-}
-
 .primary-info-description {
   @include setText(1.7rem, 700);
   grid-column: 1 / 5;

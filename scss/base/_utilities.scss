@@ -1,0 +1,12 @@
+
+.text-large {
+  font-size: 4.6rem;
+
+  @include device-large {
+    font-size: 6rem;
+  }
+
+  @include device-medium-large {
+    font-size: 6rem;
+  }
+}

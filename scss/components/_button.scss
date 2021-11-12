@@ -1,0 +1,15 @@
+.btn {
+  @include setText(1.6rem, 700, center);
+  max-width: 20rem;
+  padding: 1.5rem 3rem;
+  background-color: $white;
+
+  &--green {
+    color: $darkGreen;
+    border: 2px solid $darkGreen;
+  }
+
+  &--center {
+    margin: 0 auto;
+  }
+}

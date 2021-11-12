@@ -2,11 +2,14 @@
 
 @import './base/colors';
 @import './base/mixins';
+@import './base/utilities';
 @import './components/hero';
 @import './components/arrow';
+@import './components/button';
 @import './components/primary-info';
 @import './components/secondary-info';
 @import './components/full-text';
+@import './components/call-to-action';
 
 * {
   box-sizing: border-box;
@@ -34,4 +37,12 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.horizontal-divider {
+  content: "";
+  max-width: 104rem;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid $gray;
 }
