@@ -21,3 +21,35 @@
     top: 8px;
   }
 }
+
+.arrow-head__container {
+  position: absolute;
+  top: 50%;
+
+  &--left {
+    left: 1%;
+  }
+
+  &--right {
+    right: 6%;
+  }
+}
+
+.arrow-head {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: $black;
+
+  &--left {
+    transform: rotate(180deg);
+  }
+
+  &--bg-transparent {
+    background-color: rgba($black, 0.5);
+  }
+}

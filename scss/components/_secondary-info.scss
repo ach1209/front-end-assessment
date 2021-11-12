@@ -9,8 +9,10 @@
   }
 
   &__background {
-    grid-column: 1 / -1;
-    grid-row: 1;
+    @include device-small-medium-no-max {
+      grid-column: 1 / -1;
+      grid-row: 1;
+    }
   }
 
   &__image-container {
@@ -27,10 +29,6 @@
     }
 
     @include device-medium {
-      grid-column: 3 / -1;
-    }
-
-    @include device-small-medium {
       grid-column: 3 / -1;
     }
   }

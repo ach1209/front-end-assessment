@@ -35,6 +35,12 @@
   }
 }
 
+@mixin device-small-medium-no-max {
+  @media screen and (min-width: 562px) {
+    @content;
+  }
+}
+
 @mixin device-small-medium {
   @media screen and (min-width: 562px) and (max-width: 719px) {
     @content;
