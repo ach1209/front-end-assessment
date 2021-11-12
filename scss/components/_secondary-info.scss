@@ -36,7 +36,7 @@
   }
 
   &__content-body {
-    padding-left: 2rem;
+    padding: 0 2rem;
     position: absolute;
 
     @include device-medium-large-no-max {
