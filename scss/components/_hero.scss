@@ -1,39 +1,39 @@
-.hero-section {
+.hero {
   position: relative;
   top: 8rem;
-}
 
-.hero-title {
-  @include setText(2rem, 700, center, uppercase);
-  letter-spacing: 1rem;
+  &__title {
+    @include setText(2rem, 700, center, uppercase);
+    letter-spacing: 1rem;
 
-  @include device-medium-large {
-    font-size: 4rem;
+    @include device-medium-large {
+      font-size: 4rem;
+    }
   }
-}
 
-.hero-subtitle {
-  @include setText(4.6rem, 700, center, uppercase);
-  letter-spacing: 1rem;
+  &__subtitle {
+    @include setText(4.6rem, 700, center, uppercase);
+    letter-spacing: 1rem;
 
-  @include device-medium-large {
-    font-size: 8.5rem;
+    @include device-medium-large {
+      font-size: 8.5rem;
+    }
   }
-}
 
-.hero-content {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  &__description {
+    @include setText(1.7rem, 700, center);
+    padding: 2rem;
 
-.hero-description {
-  @include setText(1.7rem, 700, center);
-  padding: 2rem;
-
-  &--compact {
-    max-width: 539px;
-    margin: 0 auto;
+    &--compact {
+      max-width: 539px;
+      margin: 0 auto;
+    }
   }
 }
 
