@@ -11,7 +11,7 @@
   "author": "Anthony",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "lite-server": "^2.6.1"
